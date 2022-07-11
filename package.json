@@ -1,9 +1,12 @@
 {
+  "homepage": "http://sshekhar336.github.io/StarWars",
   "name": "parser-console-91social-facing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run prod",
+    "deploy": "gh-page -d build",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "webpack serve --mode=development",
     "prod": "NODE_ENV=production webpack --mode=development",
@@ -28,6 +31,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.6",
     "node-sass": "^7.0.1",
